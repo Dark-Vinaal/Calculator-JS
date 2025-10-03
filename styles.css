@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (prefers-color-scheme: light) {
+
+    body {
+        background: linear-gradient(135deg, #d9a7c7, #fffcdc);
+    }
+
+    .navbar h2 {
+        color: #764ba2;
+        text-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    .calc {
+        background-color: #ecf0f3;
+        padding: 15px;
+        border-radius: 30px;
+        box-shadow: inset 5px 5px 12px #ffffff,
+            5px 5px 12px rgba(0, 0, 0, .16);
+        display: grid;
+        grid-template-columns: repeat(4, 68px);
+    }
+
+    input {
+        grid-column: span 4;
+        height: 70px;
+        width: 260px;
+        background-color: #ecf0f3;
+        border: none;
+        border-radius: 30px;
+        box-shadow: inset -5px -5px 12px #ffffff,
+            inset 5px 5px 12px rgba(0, 0, 0, .16);
+        color: rgb(70, 70, 70);
+        font-size: 50px;
+        text-align: right;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        padding: 20px
+    }
+
+    button {
+        height: 48px;
+        width: 48px;
+        margin: 10px;
+        border: none;
+        border-radius: 50%;
+        margin: 8px;
+        background-color: #ecf0f3;
+        box-shadow: -5px -5px 12px #ffffff,
+            5px 5px 12px rgba(0, 0, 0, .16);
+        font-size: 16px;
+        color: rgb(70, 70, 70);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+    button:active {
+        box-shadow: inset -5px -5px 12px #ffffff,
+            inset 5px 5px 12px rgba(0, 0, 0, .16);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    }
+
+    .navbar h2 {
+        color: #fffcdc;
+        text-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+        background: linear-gradient(90deg, #fffcdc, #d9a7c7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    .calc {
+        background-color: #1e1e1e;
+        padding: 15px;
+        border-radius: 30px;
+        box-shadow: inset 5px 5px 12px #141414,
+            5px 5px 12px rgba(0, 0, 0, .16);
+        display: grid;
+        grid-template-columns: repeat(4, 68px);
+    }
+
+    input {
+        grid-column: span 4;
+        height: 70px;
+        width: 260px;
+        background-color: #1e1e1e;
+        border: none;
+        border-radius: 30px;
+        box-shadow: inset -5px -5px 12px #2c2c2c,
+            inset 5px 5px 12px rgba(0, 0, 0, .16);
+        color: white;
+        font-size: 50px;
+        text-align: right;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        padding: 20px
+    }
+
+    button {
+        height: 48px;
+        width: 48px;
+        margin: 10px;
+        border: none;
+        border-radius: 50%;
+        margin: 8px;
+        background-color: #1e1e1e;
+        box-shadow: -5px -5px 12px #2c2c2c,
+            5px 5px 12px rgba(0, 0, 0, .16);
+        font-size: 16px;
+        color: rgb(150, 150, 150);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+    button:active {
+        box-shadow: inset -5px -5px 12px #2c2c2c,
+            inset 5px 5px 12px rgba(0, 0, 0, .16);
+        transform: translate(0.6px, 0.6px);
+    }
+
+    .equal {
+        background-color: #fb7c14;
+    }
+
+    .arithematic,
+    .exponent {
+        color: #6dee0a;
+    }
+
+    .cldel {
+        color: #ff3b3b;
+    }
+}
+
+/* .equal {
+    background-color: #03a9f4;
+    color: white;
+    box-shadow: 0 0 5px #03a9f4,
+        0 0 25px #03a9f4,
+        0 0 50px #03a9f4,
+        0 0 100px #03a9f4;
+} */
+
+/* .arithematic {
+    background-color: #ff8c00;
+    color: white;
+    box-shadow: 0 0 5px #ff8c00,
+        0 0 25px #ff8c00,
+        0 0 50px #ff8c00,
+        0 0 100px #ff8c00;
+} */
